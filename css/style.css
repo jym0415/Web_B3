@@ -1,0 +1,110 @@
+*{margin: 0; padding: 0;}
+li,ul{list-style: none;}
+a{text-decoration: none; font-family: "맑은고딕",sans-serif; color: #333333;}
+
+/*공통*/
+.container{width: 1200px;}
+.m-auto{margin: 0 auto;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.d-flex{display: flex;}
+.d-none{display: none;}
+.d-block{display: block;}
+.w-100{width: 100%;}
+.justify-between{justify-content: space-between;}
+.align-center{align-items: center;}
+.h100{height: 100px;}
+.h200{height: 200px;}
+.h300{height: 300px;}
+.ofh{overflow: hidden;}
+
+/*header*/
+
+#hd{background-color: rgb(247, 197, 205);}
+.d1a{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+    min-width: 120px;
+    text-align: center;
+
+}
+
+.d2ul{
+    height: 0;
+    left: 0; right:0;
+    overflow: hidden;
+    font-size: 18px;
+    text-align: center;
+    transition: height 0.5s;
+    background-color: rgb(233, 227, 227);
+    line-height: 2;
+
+}
+.d1li:hover .d1a{
+    background-color: rgb(248, 83, 83);
+    color: white;
+}
+.d1li:hover .d2ul{
+    height: 150px;
+}
+.d2ul li:hover{
+    background-color: rgb(236, 122, 122);
+}
+.d2ul li:hover a{
+    color: white;
+}
+
+/*slider*/
+#slider li{line-height: 0;}
+
+/*content*/
+
+.content > div { width: 33.333%;}
+.content h3{
+    line-height: 3;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.notice li{
+    display: flex;
+    line-height: 2;
+    width: 380px;
+    font-size: 16px;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+.notice a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+}
+.notice a:hover{
+    font-weight: bold;
+    color: white;
+    background-color: #333333;
+}
+.gallery ul{justify-content: center;}
+.gallery img{width: 90%;}
+
+/*ft*/
+#ft{background-color: lightgray;}
+#ft p{width: 60%; text-align: center;}
+#ft .sns li{padding: 0 10px;}
+
+/*popup*/
+.popup{
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    border: 1px solid black;
+    background-color: #fff;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+
+}
+.popup button{
+    padding: 10px;
+    float: right;
+}
